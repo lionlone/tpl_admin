@@ -1,0 +1,1698 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quản trị hệ thống Web5s</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<!-- Favicon -->
+<link rel="shortcut icon" href="http://demothu.web5s.com.vn/public/admin/ipanel/assets/img/f-inet-c.ico" />
+
+<!-- Font CSS (Via CDN) -->
+<link rel='stylesheet' type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700&subset=latin,vietnamese,latin-ext" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400italic,600italic,700italic,400,600,700&subset=latin,vietnamese,latin-ext">
+
+ <!-- Required Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/datepicker/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/daterange/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/colorpicker/css/bootstrap-colorpicker.min.css" />
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/tagmanager/tagmanager.css" />
+
+<!-- Page Plugins via CDN -->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/globalize.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/assets/skin/default_skin/css/css.css" />
+<!-- Theme CSS -->
+
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/assets/skin/default_skin/css/theme.css" />
+
+<!-- FooTable CSS -->
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/footable/css/footable.core.min.css" />
+
+<!-- Admin Forms CSS -->
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/assets/admin-tools/admin-forms/css/admin-forms.css" />
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/site/common/css/loaders.css" />
+
+<!-- jQuery -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Page Plugins -->
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/daterange/daterangepicker.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/tagmanager/tagmanager.js"></script>
+
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/sortable/jquery-sortable.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/js/jquery/number/jquery.number.min.js"></script>
+
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/assets/js/icon.js"></script>
+
+<!-- Bootstrap -->
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- FooTable -->
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/footable/js/footable.min.js"></script>
+
+<!-- Theme Javascript -->
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/assets/js/utility/utility.js"></script>
+
+<script type="text/javascript">
+    var admin_url = 'http://demothu.web5s.com.vn/admin/';
+    var base_url = 'http://demothu.web5s.com.vn/';
+    var public_url = 'http://demothu.web5s.com.vn/public/';
+    UPLOADCARE_PUBLIC_KEY = 'your_public_key';
+</script>
+
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/highcharts/highcharts.js"></script>
+<!-- Chart Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/c3charts/c3.min.css">
+<!-- Chart Page Plugins -->
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/c3charts/d3.min.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/vendor/plugins/c3charts/c3.min.js"></script>
+
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/js/custom_admin.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/js/tinymce/tinymce.min.js?v=20111006"></script>
+
+<link rel="stylesheet" href="http://demothu.web5s.com.vn/public/js/jquery/fancybox/jquery.fancybox-1.3.4.css" type="text/css" />
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/js/jquery/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://demothu.web5s.com.vn/public/js/jquery/jquery.nst.ui.js"></script>    </head>
+    <body class="sb-l-o sb-r-c">
+        <!-- Start: Main -->
+        <div id="main">
+            <!-- Acccount admin top -->
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top bg-info">
+    <div class="navbar-branding dark bg-info">
+        <a class="navbar-brand" href="http://demothu.web5s.com.vn/admin.html"> <b>iNET.VN </b>- Web5s</a>
+        <span id="toggle_sidemenu_l" class="glyphicons glyphicons-show_lines"></span>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+        <li>
+            <a class="fw700 fs14" target="_blank" href="http://demothu.web5s.com.vn/"><span class="octicon octicon-screen-full fs18 mr5"></span> Xem website</a>
+        </li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown dropdown-item-slide">
+            <a class="dropdown-toggle pl10 pr10" data-toggle="dropdown" href="#">
+                    <span class="label label-default lh12 h-20 mt5 fw700 fs12">
+                        Dùng thử                    </span>
+            </a>
+            <ul class="dropdown-menu dropdown-hover dropdown-persist pn w350 bg-white animated animated-shorter fadeIn" role="menu">
+                <li class="bg-light p8">
+                    <span class="octicon octicon-package fs22 mt5 pull-left"></span>
+                    <span class="fw600 pl5 lh30 text-uppercase fw700"> Thông tin gói dịch vụ</span>
+                    <span class="label label-warning pull-right lh12 h-20 mt5 mr5 fw700 fs12">Dùng thử</span>
+                </li>
+                
+                                                            <li class="p10 br-t item-1">
+                            <span class="fa fa-tags pr5"></span>
+                            <span class="fw600"> Sản phẩm</span>
+                            <span class="pull-right lh12 fs11 h-20 label label-success">8/30</span>
+                        </li>
+                                                                                <li class="p10 br-t item-1">
+                            <span class="fa fa-hdd-o pr5"></span>
+                            <span class="fw600"> Dung lượng</span>
+                            <span class="pull-right lh12 fs11 h-20 label label-success">4/100Mb</span>
+                        </li>
+                                                                                <li class="p10 br-t item-1">
+                            <span class="fa fa-tachometer pr5"></span>
+                            <span class="fw600"> Băng thông</span>
+                            <span class="pull-right lh12 fs11 h-20 label label-success">Không giới hạn</span>
+                        </li>
+                                                                        
+                <li class="p10 br-t item-4">
+                    <div class="text-white p10 fw600 text-center">
+                        <a style="padding:8px 14px;font-size: 16px;" class="bg-info light" href="http://ipanel.inet.vn/website-manager" title="Nâng cấp">Nâng cấp</a>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="ph10 pv20 hidden-xs"> <i class="fa fa-circle text-tp fs8"></i> </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> 
+                <img src="http://demothu.web5s.com.vn/public/img/avatar.jpg" alt="avatar" width="30" height="30" class="br3 mr15" />
+                <span>Xin chào: Nguyễn</span>
+                <span class="caret caret-tp hidden-xs"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-persist pn w250 bg-white" role="menu">
+                <li class="br-t of-h">
+                    <a href="https://id.inet.vn/account/changepass/" class="fw600 p12 animated animated-short fadeInDown">
+                            <span class="fa fa-lock pr5"></span> Thay đổi mật khẩu 
+                    </a>
+                </li>
+                <li class="br-t of-h">
+                    <a href="http://web5s.com.vn/logout.html" class="fw600 p12 animated animated-short fadeInDown">
+                        <span class="fa fa-power-off pr5"></span> Thoát 
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<!-- End: Header -->
+            <!-- Start: Sidebar -->
+<aside id="sidebar_left" class="nano nano-primary">
+    <div class="nano-content">
+                
+        <!-- sidebar menu -->
+        <ul class="nav sidebar-menu">
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class=" " 
+                   href="http://demothu.web5s.com.vn/admin/home.html">
+                        <span class="glyphicons glyphicons-home"></span>
+                        <span class="sidebar-title">Bảng điều khiển</span>
+                                        </a>
+                            </li>
+                        
+            <!-- Label -->
+            <li class="sidebar-label pt15">Quản lý sản phẩm</li>                                                 
+            <li class="active">
+                <a class="accordion-toggle menu-open" 
+                   href="http://demothu.web5s.com.vn/admin/product.html">
+                        <span class="glyphicons glyphicons-product"></span>
+                        <span class="sidebar-title">Sản phẩm</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li class="active">
+                            <a href="http://demothu.web5s.com.vn/admin/product.html" 
+                               title="Sản phẩm">
+                                   Danh sách sản phẩm                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/cat.html" 
+                               title="Danh mục">
+                                   Danh mục                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/manufac.html" 
+                               title="Thương hiệu">
+                                   Thương hiệu                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/attributes.html" 
+                               title="Thuộc tính">
+                                   Thuộc tính                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/inventory.html" 
+                               title="Quản lý kho">
+                                   Quản lý kho                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/price.html" 
+                               title="Khoảng giá tìm kiếm">
+                                   Khoảng giá tìm kiếm                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/tran.html">
+                        <span class="glyphicons glyphicons-tran"></span>
+                        <span class="sidebar-title">Đơn hàng</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/customer.html" 
+                               title="Khách hàng">
+                                   Khách hàng                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/tran.html" 
+                               title="Đơn hàng">
+                                   Đơn hàng                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/stats.html" 
+                               title="Thống kê">
+                                   Thống kê                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class=" " 
+                   href="http://demothu.web5s.com.vn/admin/coupon.html">
+                        <span class="glyphicons glyphicons-coupon"></span>
+                        <span class="sidebar-title">Mã khuyến mại</span>
+                                        </a>
+                            </li>
+                        
+            <!-- Label -->
+                        <li class="sidebar-label pt15">Quản lý nội dung</li>                                     
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/news.html">
+                        <span class="glyphicons glyphicons-news"></span>
+                        <span class="sidebar-title">Tin tức</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/news.html" 
+                               title="Tin tức">
+                                   Quản lý tin tức                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/cat_news.html" 
+                               title="Thể loại tin">
+                                   Thể loại tin                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class=" " 
+                   href="http://demothu.web5s.com.vn/admin/info.html">
+                        <span class="glyphicons glyphicons-info"></span>
+                        <span class="sidebar-title">Trang nội dung</span>
+                                        </a>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/contact.html">
+                        <span class="glyphicons glyphicons-contact"></span>
+                        <span class="sidebar-title">Khách hàng liên hệ</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/contact.html" 
+                               title="Danh sách liên hệ">
+                                   Danh sách liên hệ                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/send_email.html" 
+                               title="Đăng ký nhận email">
+                                   Đăng ký nhận email                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                <li class="sidebar-label pt15">Cấu hình hệ thống</li>             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/affiliate.html">
+                        <span class="glyphicons glyphicons-affiliate"></span>
+                        <span class="sidebar-title">Cộng tác viên</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/affiliate.html" 
+                               title="Cộng tác viên">
+                                   Cộng tác viên                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/cashout.html" 
+                               title="Yêu cầu rút tiền">
+                                   Yêu cầu rút tiền                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/ads.html">
+                        <span class="glyphicons glyphicons-ads"></span>
+                        <span class="sidebar-title">Quảng cáo</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/banner_size.html" 
+                               title="Kích thước">
+                                   Kích thước                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/ads_location.html" 
+                               title="Vị trí">
+                                   Vị trí                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/ads_banner.html" 
+                               title="Banner">
+                                   Banner                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/theme.html">
+                        <span class="glyphicons glyphicons-theme"></span>
+                        <span class="sidebar-title">Giao diện</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/menu.html" 
+                               title="Menu">
+                                   Menu                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/slide.html" 
+                               title="Trình chiếu ảnh">
+                                   Trình chiếu ảnh                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/setting/editcss.html" 
+                               title="Cập nhật css">
+                                   Cập nhật css                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/admin.html">
+                        <span class="glyphicons glyphicons-admin"></span>
+                        <span class="sidebar-title">Tài khoản</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/admin_group.html" 
+                               title="Nhóm quản trị">
+                                   Nhóm quản trị                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/admin.html" 
+                               title="Ban quản trị">
+                                   Ban quản trị                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class=" " 
+                   href="http://demothu.web5s.com.vn/admin/log.html">
+                        <span class="glyphicons glyphicons-log"></span>
+                        <span class="sidebar-title">Lịch sử tác động</span>
+                                        </a>
+                            </li>
+                        
+            <!-- Label -->
+                                                             
+            <li class="">
+                <a class="accordion-toggle " 
+                   href="http://demothu.web5s.com.vn/admin/setting.html">
+                        <span class="glyphicons glyphicons-setting"></span>
+                        <span class="sidebar-title">Cấu hình</span>
+                        <span class="caret"></span>                </a>
+                                <ul class="nav sub-nav">
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/setting.html" 
+                               title="Cấu hình chung">
+                                   Cấu hình chung                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/block.html" 
+                               title="Quản lý block">
+                                   Quản lý block                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/shipping.html" 
+                               title="Vận chuyển">
+                                   Vận chuyển                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/notification.html" 
+                               title="Thông báo">
+                                   Thông báo                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/setting/domain.html" 
+                               title="Tên miền">
+                                   Tên miền                            </a>
+                        </li>
+                                            <li >
+                            <a href="http://demothu.web5s.com.vn/admin/data.html" 
+                               title="Dữ liệu trang">
+                                   Dữ liệu trang                            </a>
+                        </li>
+                                    </ul>
+                            </li>
+                        
+            <!-- Resources stats -->
+            <li class="sidebar-label pt25 pb10 text-info">Tài nguyên</li>
+
+<!-- Sidebar progress bars -->
+        <li class="sidebar-stat mb10">
+        <a class="fs11">
+            <span class="fa fa-tags text-info"></span>
+            <span class="sidebar-title text-info">Sản phẩm</span>
+            <span class="pull-right mr20">8/30</span>
+            <div class="progress progress-bar-xs ml20 mr20">
+                <div class="progress-bar progress-bar-info" 
+                     role="progressbar" aria-valuenow="45" aria-valuemin="0" 
+                     aria-valuemax="26.666666666667" style="width: 26.666666666667%">
+                    <span class="sr-only">26.666666666667%</span>
+                </div>
+            </div>
+        </a>
+    </li>
+            <li class="sidebar-stat mb10">
+        <a class="fs11">
+            <span class="fa fa-hdd-o text-warning"></span>
+            <span class="sidebar-title text-warning">Dung lượng</span>
+            <span class="pull-right mr20">4/100Mb</span>
+            <div class="progress progress-bar-xs ml20 mr20">
+                <div class="progress-bar progress-bar-warning" 
+                     role="progressbar" aria-valuenow="45" aria-valuemin="0" 
+                     aria-valuemax="3.8203125" style="width: 3.8203125%">
+                    <span class="sr-only">3.8203125%</span>
+                </div>
+            </div>
+        </a>
+    </li>
+            <li class="sidebar-stat mb10">
+        <a class="fs11">
+            <span class="fa fa-tachometer text-success"></span>
+            <span class="sidebar-title text-success">Băng thông</span>
+            <span class="pull-right mr20">Không giới hạn</span>
+            <div class="progress progress-bar-xs ml20 mr20">
+                <div class="progress-bar progress-bar-success" 
+                     role="progressbar" aria-valuenow="45" aria-valuemin="0" 
+                     aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only">100%</span>
+                </div>
+            </div>
+        </a>
+    </li>
+                    
+        </ul>
+    </div>
+</aside>
+
+            <!-- Start: Content-Wrapper -->
+            <section id="content_wrapper">
+                <script type="text/javascript">
+(function($)
+{
+    $(document).ready(function()
+    {
+        // Tab active
+        main = $('.form');
+        main.contentTabs();
+
+        // Them thuoc tinh cho san pham
+        if (!main.find('#content_add_option_product').html())
+        {
+                create_form_option_product(1);
+        }
+        
+        var add_option_product = main.find('#add_option_product');
+        add_option_product.click(function()
+        {
+                var option_product = $(this).attr('_part');
+                option_product = parseInt(option_product)+1;
+                $(this).attr('_part', option_product);
+
+                create_form_option_product(option_product);
+
+                return false;
+        });
+
+        /**
+         * Tao form nhap gia cau tra loi
+         */
+        function create_form_option_product(total)
+        {
+                // Lay obj danh sach hien tai
+                var list = main.find('#content_add_option_product');
+                list.find('input').each(function()
+                {
+                        $(this).attr('value', $(this).val());
+                });
+
+                // Lay html temp
+                var temp = main.find('#option_product_temp').html();
+                temp = temp_set_value(temp, {param_name: 'name'});
+
+                // Tao danh sach tuong ung
+                var list_html = '';
+                for (var i = 1; i <= total; i++)
+                {
+                        var html = list.find('#option_product_'+i).parent().html();
+                        html = (!html) ? temp_set_value(temp, {option_product:i}) : html;
+                        list_html += '<div>'+html+'</div>';
+                }
+
+                // Cap nhat html
+                list.html(list_html).show();
+        }
+
+        // Thay doi danh muc
+        $('#param_cat').live('click', function()
+        {
+                var cat_ids = new Array();
+
+                main.find("input[name='cat[]']:checked").each(function (i, val)
+                {
+                        cat_ids[i] = $(this).val();
+                });
+
+                var cat_ids = cat_ids.join(",");
+                var manufac_id = main.find('select[name=manufac]').val();
+
+                var content = $('#manufac_content');
+                $(this).nstUI(
+                {
+                    method:	"loadAjax",
+                    loadAjax:{
+                        url: 'http://demothu.web5s.com.vn/admin/manufac/get_manufac.html',
+                        data: 'cat_ids='+cat_ids+'&manufac_id='+manufac_id,
+                        field: {load: '', show: ''},
+                        event_complete: function(data)
+                        {
+                                if(data.error == undefined)
+                                {
+                                        content.slideDown(function(){ $(this).show(); });
+                                        content.html(data);
+                                }
+                                else
+                                {
+                                        content.slideUp(function(){ $(this).hide(); });
+                                }
+                                return false;
+                        }
+                    },
+                });
+
+                var option_content = $('#option_content');
+                $(this).nstUI(
+                {
+                        method:	"loadAjax",
+                        loadAjax:{
+                                url: 'http://demothu.web5s.com.vn/admin/option_product/get_option.html',
+                                data: 'cat_ids='+cat_ids,
+                                field: {load: '', show: ''},
+                                event_complete: function(data)
+                                {
+                                        if(data.error == undefined)
+                                        {
+                                                option_content.slideDown(function(){ $(this).show(); });
+                                                option_content.html(data);
+                                        }
+                                        else
+                                        {
+                                                option_content.slideUp(function(){ $(this).hide(); });
+                                        }
+                                        return false;
+                                }
+                        },
+                });
+
+                        });
+
+        // Xu ly attributes
+        $('a.tab-attributes').live('click', function () 
+        {
+                var hide = $('a.selected').attr('rel');
+                $('div#' + hide).hide();
+                $('a.selected').removeClass('selected');
+                $(this).addClass('selected');
+                var show = $(this).attr('rel');
+                $('div#' + show).show();
+        });
+
+        $(".plus").live('click', function () 
+        {
+                var attr_id = $(this).attr('_id');
+                var tablerow = $('div#attributes_content_' + attr_id).html();
+                var html = '<div class="clear"></div>' + tablerow;
+
+                $(this).attr('_part', parseInt($(this).attr('_part')) + 1);
+                $("#attributes" + attr_id + " div:last").before(html);
+
+                plus_button(attr_id);
+        });
+
+        $(".minus").live('click', function () 
+        {
+                var key = $(this).attr('_id');
+                $("#attributes" + key + " tr:last").remove();
+        });
+
+        $('.del_attributes').live('click', function () 
+        {
+                $(this).parent().parent().remove();
+
+                var attr_id = $(this).attr('_id');
+                $('#add_attributes_' + attr_id).attr('_part', parseInt($('#add_attributes_' + attr_id).attr('_part')) - 1);
+
+                plus_button(attr_id);
+        });
+
+        // An hien phim add thuoc tinh
+        function plus_button(attr_id)
+        {
+                if(attr_id == undefined)
+                {
+                        return false;
+                }
+
+                if(parseInt($('#add_attributes_' + attr_id).attr('_part')) >= parseInt($('#add_attributes_' + attr_id).attr('_max')))
+                {
+                        $('#add_attributes_' + attr_id).hide();
+                }
+                else
+                {
+                        $('#add_attributes_' + attr_id).show();
+                }
+        }
+
+        // Toggle maintenance
+        toggle_status_content('store', 'store_main');
+
+        /**
+        * Hien thi content theo param value
+         */
+        function toggle_status_content(param, content)
+        {
+                toggle_status_content_handle(param, content);
+
+                main.find('input[name='+param+']').change(function()
+                {
+                        toggle_status_content_handle(param, content);
+                });
+        }
+
+        function toggle_status_content_handle(param, content)
+        {
+                var status = (main.find('input[name='+param+']:checked').val() == '1') ? true : false;
+                var content = main.find('#'+content);
+                if (status)
+                {
+                        content.slideDown(function(){ $(this).show(); });
+                }
+                else
+                {
+                        content.slideUp(function(){ $(this).hide(); });
+                }
+        }
+
+        // Tu dong them 2 row
+        if (!main.find('#content_add_slide').html())
+        {
+                create_form_img_slide(2);
+        }
+
+        var add_img_slide = main.find('#add_img_slide');
+        add_img_slide.click(function()
+        {
+                var part = $(this).attr('_part');
+                part = parseInt(part)+1;
+                $(this).attr('_part', part);
+
+                create_form_img_slide(part);
+                return false;
+        });
+
+        /**
+        * Tao form nhap anh
+        */
+        function create_form_img_slide(total)
+        {
+               // Lay obj danh sach hien tai
+               var list = main.find('#content_add_slide');
+               list.find('input').each(function()
+               {
+                       $(this).attr('value', $(this).val());
+               });
+
+               // Lay html temp
+               var temp = main.find('#img_slide_temp').html();
+               temp = temp_set_value(temp, {param_name: 'name'});
+
+               // Tao danh sach tuong ung
+               var list_html = '';
+               for (var i = 1; i <= total; i++)
+               {
+                       var html = list.find('.img_position_'+i).parent().html();
+                       html = (!html) ? temp_set_value(temp, {part:i}) : html;
+                       list_html += '<div>'+html+'</div>';
+               }
+
+               // Cap nhat html
+               list.html(list_html).show();
+
+                // Tai lai ung dung fancyox
+                main.find('.fancybox').fancybox({
+                    'width': 900,
+                    'height': 600,
+                    'type': 'iframe',
+                    'autoScale': false
+                });
+        }
+    });
+		
+        
+})(jQuery);
+
+    /**
+     * Xoa thuoc tinh
+    */
+    function del_option_product(id)
+    {
+        jQuery('#option_product_' + id).parent().remove();
+        jQuery('#add_option_product').attr('_part', jQuery('#add_option_product').attr('_part') - 1);
+    }
+    
+    /**
+     * Xoa thuoc tinh
+    */
+    function del_img_slide_temp(part)
+    {
+        jQuery('.img_position_' + part).parent().remove();
+        jQuery('#add_img_slide').attr('_part', jQuery('#add_img_slide').attr('_part') - 1);
+    }
+    
+    /*
+    * Set gia tri cho doi tuong
+    */
+    function SetValueToInput(unit, target)
+    {
+            main = $('.form');
+            main.find('input[name='+target+']').attr('value', unit);
+            main.find('span.weight-unit').html(unit);
+    }
+    
+    function ShowPublishTime()
+    {
+            var status = parseInt($('.PublishTime input[name=schedule]').attr('value'));
+            if(status == 0 || !status)
+            {
+                $('.PublishTime').show();
+                $('.PublishTime input[name=schedule]').attr('value', 1);
+                $('label.publish-date').css('color', '#4a89dc');
+            }
+            else
+            {
+                    HidePublishTime();
+            }
+    }
+    
+    function HidePublishTime()
+    {
+            $('.PublishTime').hide();
+            $('.PublishTime input[name=schedule]').attr('value', 0);
+            $('label.publish-date').css('color', '');
+    }
+</script><!-- Common -->
+<script type="text/javascript">
+(function($)
+{
+	$(document).ready(function()
+	{
+		var main = $('#form');
+		
+		// Tabs
+		main.contentTabs();
+	});
+})(jQuery);
+</script>
+
+<header id="topbar" class="affix">
+        <div class="topbar-left">
+                <!-- Breadcrumbs -->
+                <ol class="breadcrumb">
+        <li class="crumb-icon">
+                <a href="http://demothu.web5s.com.vn/admin.html" title="">
+                        <span class="glyphicon glyphicon-home"></span>
+                </a>
+        </li>
+        
+                                <li >
+                        <a href="http://demothu.web5s.com.vn/admin/product.html">Sản phẩm</a>
+                </li>
+                        <li class="current">
+                        <a href="http://demothu.web5s.com.vn/admin/product/edit/5333.html">Chỉnh sửa</a>
+                </li>
+        </ol>        </div>
+        <div class="topbar-right">
+                <a class="btn btn-success fw600 pull-right mr10 br3 pv5" href="http://demothu.web5s.com.vn/admin/product/add.html">
+                        <i class="fa fa-plus mr5"></i> Thêm mới                </a>
+        </div>
+</header>
+
+<!-- Message -->
+
+
+
+
+
+
+<!-- Main content wrapper -->
+<section id="content">
+    <div class="panel">
+        <div class="panel-heading"> 
+            <ul class="tabs nav panel-tabs-border panel-tabs panel-tabs-left">
+                <li class="active">
+                    <a href="#tab_general">Thông tin chung</a>
+                </li>
+                <li><a href="#tab_option">Tùy chọn</a></li>
+                <li><a href="#tab_image">Hình ảnh</a></li>
+                <li><a href="#tab_attributes">Thuộc tính</a></li>
+                <li><a href="#tab_seo_onpage">Thiết lập SEO</a></li>
+            </ul>
+        </div>
+        
+        <div class="panel-body p25 admin-form">
+            <div class="tab-content pn br-n admin-form">
+            <!-- Form -->
+            <form class="form" id="form" action="http://demothu.web5s.com.vn/admin/product/edit/5333.html" method="post">
+                <fieldset>
+                    <div class="tab_container">
+                        <div id="tab_general" class="tab_content pd0">
+                            <div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_name">
+            Tên(<span class="text-danger">*</span>):
+        </label>
+    </div>
+    <div class="col-md-6">
+        <input name="name" id="param_name" _autocheck="true" 
+               value="Áo sơ mi nam" type="text" class="form-control" />
+        <span name="name_autocheck" class="autocheck append-icon right"></span>
+        <div name="name_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_name_uri">
+            Đường dẫn/Alias:</label>
+    </div>
+    <div class="col-md-6">
+        <div class="input-group">
+            <span class="input-group-addon">/san-pham/</span>
+            <input name="name_uri" id="param_name_uri" class="form-control" type="text" 
+                   value="ao-so-mi-nam" />
+            <div name="name_uri_error" class="text-danger"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+        <div class="col-md-2">
+            <label class="field mb5" for="param_cat">
+                Danh mục(<span class="text-danger">*</span>):</label>
+        </div>
+        <div class="col-md-6">
+                <div class="option-group field" id="cats" style="max-height: 250px;overflow-y: scroll;">
+                                                        <label class="option option-primary mr25 mb15">
+                                                                                    <input type="checkbox" name="cat[]" id="param_cat" 
+                                                   value="2241"  />
+                                            <span class="checkbox"></span>
+                                                                                Giày thể thao                                </label>
+                                <div class="clear"></div>
+                                                        <label class="option option-primary mr25 mb15">
+                                                                                    <input type="checkbox" name="cat[]" id="param_cat" 
+                                                   value="2242" checked="checked" />
+                                            <span class="checkbox"></span>
+                                                                                Phụ kiện                                </label>
+                                <div class="clear"></div>
+                                        </div>
+                <div name="cat_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="row mb10" id="manufac_content">
+        <div class="col-md-2">
+                <label class="field mb5" for="param_manufac">Thương hiệu:</label>
+        </div>
+        <div class="col-md-3">
+                <label class="field select">
+                        <select name="manufac" _autocheck="true">
+                                <option value="">Chọn Thương hiệu</option>
+                                                                <option value="1703" >
+                                                Addidas                                        </option>
+                                                                <option value="1704" >
+                                                Nike                                        </option>
+                                                        </select>
+                        <i class="arrow"></i>
+                        <span name="manufac_autocheck" class="autocheck append-icon right"></span>
+                </label>
+                <div name="manufac_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+</div>
+
+<!-- Price -->
+<div class="row mb10">
+	<div class="col-md-2">
+            <label class="field mb5" for="param_price">Giá bán:</label>
+        </div>
+	<div class="col-md-3">
+		<div class="fl input-group">
+                    <input name="price" id="param_price" value="510000" _autocheck="true" type="text" class="format_number form-control" />
+                    <span class="input-group-addon unit">₫</span>
+                </div>
+		<span name="price_autocheck" class="autocheck append-icon right"></span>
+		<div name="price_error" class="text-danger"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<!-- Price OLD -->
+<div class="row mb10">
+        <div class="col-md-2">
+            <label class="field mb5" for="param_price_old">Giá gốc:</label>
+        </div>
+	<div class="col-md-3">
+		<div class="fl input-group">
+                    <input name="price_old" id="param_price_old" value="0" type="text" class="format_number form-control" />
+                    <span class="input-group-addon unit">₫</span>
+                </div>
+		<span name="price_old_autocheck" class="autocheck append-icon right"></span>
+		<div name="price_old_error" class="text-danger"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_discount_end_time">Kết thúc khyến mại:</label>
+    </div>
+    <div class="col-md-3">
+            <div class="input-group pull-left">
+                <input name="discount_end_time" id="param_discount_end_time" class="datepicker_full form-control" 
+                       type="text" value="" />
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </span>
+            </div>  
+
+            <span name="discount_end_time_autocheck" class="autocheck append-icon right"></span>
+            <div name="discount_end_time_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+            <label class="field mb5" for="store">Quản lý kho hàng(<span class="text-danger">*</span>):</label>
+    </div>
+    <div class="col-md-6">
+            <div class="radio-custom radio-info pull-left mv10">
+                <input type="radio" name="store" value="1" id="store_1"  />
+                    <label for="store_1">Có</label>
+            </div>
+            <div class="radio-custom radio-info pull-left mv10">
+                    <input type="radio" name="store" value="0" id="store_0" checked="checked" />
+                    <label for="store_0">Không</label>
+            </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<!-- Store -->
+<div id="store_main">
+    <div id="total_attributes">
+        <div class="row mb10">
+            <div class="col-md-2">
+                <label class="field mb5" for="param_total">
+                        Tổng số lượng:
+                </label>
+            </div>
+            <div class="col-md-2">
+                    <input name="total" id="param_total" class="form-control" _autocheck="true" value="13" type="text" />
+                    <span name="total_autocheck" class="autocheck append-icon right"></span>
+                    <div name="total_error" class="text-danger"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="row mb10">
+        <div class="col-md-2">
+            <label class="field mb5">Tình trạng:</label>
+        </div>
+        <div class="col-md-3">
+            <label class="field select" for="store_status">
+                <select name="store_status" id="store_status" _autocheck="true">
+                                                <option value="0" selected="selected">
+                                        Còn hàng                                </option>
+                                                <option value="1" >
+                                        Chỉ còn ở cửa hàng                                </option>
+                                                <option value="2" >
+                                        Số lượng hạn chế                                </option>
+                                                <option value="3" >
+                                        Chỉ đặt online                                </option>
+                                                <option value="4" >
+                                        Hết hàng                                </option>
+                                                <option value="5" >
+                                        Đặt hàng trước                                </option>
+                                                <option value="6" >
+                                        Còn ít hàng                                </option>
+                                                <option value="7" >
+                                        Ngừng cung cấp                                </option>
+                                        </select>
+                <i class="arrow"></i>
+            </label>
+            <span name="store_status_autocheck" class="autocheck append-icon right"></span>
+            <div name="store_status_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-12">
+        <label class="control-label strong publish-date" onclick="ShowPublishTime()">
+                <a href="javascript:void(0)">Đặt lịch hiển thị</a>
+        </label>
+    </div>
+
+    <div class="row mb10 PublishTime" style="display:none;">
+        <div class="col-md-12">
+            <div class="col-md-2">
+                <label class="control-label strong">
+                    Đặt lịch hiển thị                </label>
+            </div>
+
+            <div class="col-md-10">
+                <input type="hidden" name="schedule" value="" />
+                <div class="input-group pull-left col-sm-3">
+                    <input class="form-control datepicker_full" id="publish_time" name="publish_time" 
+                           value="" 
+                           placeholder="Chọn thời gian" type="text" />
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </span>
+                </div>
+                <label onclick="HidePublishTime()" class="control-label mt10 ml10" 
+                       href="javascript:void(0)">Hủy bỏ                </label>
+                <div class="clear"></div>
+                <div name="schedule_error" class="text-danger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5">Từ khóa:</label>
+    </div>
+    <div class="col-md-6">
+        <input name="tag" id="tag" class="tags" _tags_text="Nhập giá trị sau đó Enter"
+               _tags_ac="http://demothu.web5s.com.vn/admin/product/ac_info/tag.html" type="text" class="form-control"
+               value="" />
+        <div name="tag_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+            <label class="field mb5" for="param_intro">Mô tả ngắn:</label>
+    </div>
+    <div class="col-md-6">
+            <label class="field prepend-icon" for="param_intro">
+                    <textarea name="intro" id="param_intro" _autocheck="true" 
+                              class="gui-textarea"></textarea>
+                    <label class="field-icon" for="param_intro"><i class="fa fa-file-text"></i></label>
+            </label>
+            <span name="intro_autocheck" class="autocheck append-icon right"></span>
+            <div name="intro_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_content">Mô tả chi tiết:</label>
+    </div>
+    <div class="col-md-10">
+        <textarea name="content" id="param_content" class="editor"><p>Đang cập nhật</p></textarea>
+        <div name="content_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+                        </div>
+
+                        <div id="tab_image" class="tab_content pd0">
+                            <div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_image">Ảnh đại diện:</label>
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <label class="field mb5" id="widget_upload_image">
+                <input name="image_name" id="param_image_name" _autocheck="true" type="text" class="form-control img-input" value="/product/product15.jpg" />
+                    
+        <a title="Hình ảnh" href="http://demothu.web5s.com.vn/public/js/tinymce/plugins/filemanager/dialog.php?type=1&subfolder=&editor=mce_0&lang=eng&fldr=&field_id=param_image_name" 
+            class="btn btn-success fw600 pull-right pv5 hidden-xs fancybox"><span>Chọn</span>
+        </a> 
+</label>
+
+<div name="image_name_error" class="text-danger"></div>
+<div class="upload_single_image mt10"><div id="upload_complete"></div></div>
+
+<script type="text/javascript">
+        $( document ).ready(function() 
+        {
+                $("input[name=image_name").blur(function() 
+                {
+                        loadFile();
+                });
+        });
+        
+        // Tu dong load file sau 2s
+        setTimeout("loadFile", 2000);
+                
+        function loadFile()
+        {
+                var file = $('input[name=image_name]').val();
+                $.ajax({
+                        url: admin_url + 'home/getfile',
+                        type:'GET',
+                        data: 'file='+file,
+                        error: function()
+                        {
+                                // false
+                        },
+                        success: function(html)
+                        {
+
+                                $('#upload_complete').html(html);
+                        }
+                });
+        }
+</script>            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb10" id="img_slide_show">
+    <div class="col-md-2">
+            <label class="field mb5" for="param_image">Ảnh đính kèm:</label>
+    </div>
+    <div class="col-md-10">
+        <div class="col-md-9" id="content_add_slide">
+                    </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)" id="add_img_slide" 
+                       _part="0">
+                        <i class="fa fa-plus-square"></i>
+                        Thêm ảnh 
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Img slide temp -->
+        <div id="img_slide_temp" class="hide">
+            <div class="row mb5 img_position_{part}" id="widget_upload_image">
+                <div class="col-md-1 text-right">{part}</div>
+                <div class="col-md-10">
+                    <input {param_name}="images[]" id="param_images_{part}" value="" type="text" class="form-control img-input" />
+                    <a title="Hình ảnh" href="http://demothu.web5s.com.vn/public/js/tinymce/plugins/filemanager/dialog.php?type=1&subfolder=&editor=mce_0&lang=eng&fldr=&field_id=param_images_{part}" 
+                        class="btn btn-success fw600 pull-right pv5 hidden-xs fancybox"><span>Chọn</span>
+                    </a>
+                </div>
+                <div class="col-md-1">
+                    <a href="javascript:void(0)" onclick="del_img_slide_temp({part})" title="Xóa">
+                        <i class="f15 mt5 fa fa-trash"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+
+                        <div id="tab_option" class="tab_content pd0">
+                            <div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5">Trạng thái:</label>
+    </div>
+    <div class="col-md-6">
+        <div class="radio-custom radio-info pull-left mv10">
+            <input type="radio" name="status" value="0" id="status_0" 
+                checked="checked" />
+            <label for="status_0">Bật</label>
+
+            <input type="radio" name="status" value="1" id="status_1" 
+                  />
+            <label for="status_1">Tắt</label>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5">Bình luận:</label>
+    </div>
+    <div class="col-md-6">
+        <div class="radio-custom radio-info pull-left mv10">
+            <input type="radio" name="allow_comment" value="1" id="allow_comment_1" 
+                checked="checked" />
+            <label for="allow_comment_1">Có</label>
+
+            <input type="radio" name="allow_comment" value="0" id="allow_comment_0" 
+                  />
+            <label for="allow_comment_0">Không</label>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5">Hiển thị trang chủ:</label>
+    </div>
+    <div class="col-md-6">
+        <div class="radio-custom radio-info pull-left mv10">
+                        
+            <input type="radio" name="home" value="1" id="home_1" 
+                checked="checked"  />
+            <label for="home_1">Có</label>
+            
+            <input type="radio" name="home" value="0" id="home_0" 
+                 />
+            <label for="home_0">Không</label>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_weight">Trọng lượng:</label>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group">
+            <input class="form-control valid" id="param_weight" name="weight" type="text" value="0.00" _autocheck="true" />
+            <div class="input-group-btn">
+                <input id="param_weight_unit" name="weight_unit" type="hidden" value="kg" />
+                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" style="line-height: 19px;">
+                    <span class="weight-unit">kg</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu weight-unit-select">
+                                            <li><a href="javascript:void(0)" onclick="SetValueToInput('kg', 'weight_unit')">kg</a></li>
+                                            <li><a href="javascript:void(0)" onclick="SetValueToInput('g', 'weight_unit')">g</a></li>
+                                            <li><a href="javascript:void(0)" onclick="SetValueToInput('lb', 'weight_unit')">lb</a></li>
+                                            <li><a href="javascript:void(0)" onclick="SetValueToInput('oz', 'weight_unit')">oz</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div name="weight_error" class="text-danger"></div>
+    </div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_warranty">Bảo hành :</label>
+    </div>
+    <div class="col-md-6">
+        <input name="warranty" id="param_warranty" value="" 
+               type="text" class="form-control" />
+        <span name="warranty_autocheck" class="autocheck append-icon right"></span>
+        <div name="warranty_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+            <label class="field mb5" for="param_sku">Mã sản phẩm(SKU):</label>
+    </div>
+    <div class="col-md-6">
+        <input type="text" class="form-control" name="sku" id="param_sku" 
+               value="" />
+        <span name="sku_autocheck" class="autocheck append-icon right"></span>
+        <div name="sku_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+        <label class="field mb5" for="param_barcode">Mã vạch(Code):</label>
+    </div>
+    <div class="col-md-6">
+        <input type="text" class="form-control" name="barcode" id="param_barcode" 
+               value="" />
+        <span name="barcode_autocheck" class="autocheck append-icon right"></span>
+        <div name="barcode_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+    <div class="col-md-2">
+            <label class="field mb5" for="param_gift">Quà tặng:</label>
+    </div>
+    <div class="col-md-6">
+            <label class="field prepend-icon" for="param_gift">
+               <textarea name="gift" id="param_gift" _autocheck="true" 
+                         class="gui-textarea"></textarea>
+               <label class="field-icon" for="param_gift"><i class="fa fa-file-text"></i></label>
+            </label>
+            <span name="gift_autocheck" class="autocheck append-icon right"></span>
+            <div name="gift_error" class="text-danger"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+                        </div>
+
+                        <div id="tab_attributes" class="tab_content pd0">
+                            <div class="hide">
+            <div id="attributes_content_806">
+            <div class="mt5 attr_806">
+                <div class="col-md-2">
+                    <select name="attributes[806][attributes_value_name][]">
+                                                    <option value="4234">
+                                38                            </option>
+                                                    <option value="4235">
+                                39                            </option>
+                                                    <option value="4236">
+                                40                            </option>
+                                                    <option value="4237">
+                                41                            </option>
+                                                    <option value="4238">
+                                42                            </option>
+                                                    <option value="4239">
+                                43                            </option>
+                                            </select>
+                </div>
+                
+                <div class="col-md-2">
+                    <input name="attributes[806][attributes_value_quantity][]" 
+                        type="text" class="percent_100" />
+                </div>
+                
+                <div class="col-md-2">
+                    <select name="attributes[806][attributes_value_amount_prefix][]" 
+                            class="percent_100" />
+                                                    <option value="0">
+                                Cộng thêm                            </option>
+                                                    <option value="1">
+                                Giảm đi                            </option>
+                                            </select>
+                </div>
+                
+                <div class="col-md-2">
+                    <input name="attributes[806][attributes_value_amount][]"
+                        type="text" class="percent_100" />
+                </div>
+                
+                <div class="action">
+                    <a href="javascript:void(0)" _id="806"
+                        class="del_attributes"><i class="mt5 f15 fa fa-trash"></i></a>
+                </div>
+            </div>
+        </div>
+                <div id="attributes_content_807">
+            <div class="mt5 attr_807">
+                <div class="col-md-2">
+                    <select name="attributes[807][attributes_value_name][]">
+                                                    <option value="4240">
+                                Đỏ                            </option>
+                                                    <option value="4241">
+                                Đen                            </option>
+                                                    <option value="4242">
+                                Vàng                            </option>
+                                                    <option value="4243">
+                                Tím                            </option>
+                                            </select>
+                </div>
+                
+                <div class="col-md-2">
+                    <input name="attributes[807][attributes_value_quantity][]" 
+                        type="text" class="percent_100" />
+                </div>
+                
+                <div class="col-md-2">
+                    <select name="attributes[807][attributes_value_amount_prefix][]" 
+                            class="percent_100" />
+                                                    <option value="0">
+                                Cộng thêm                            </option>
+                                                    <option value="1">
+                                Giảm đi                            </option>
+                                            </select>
+                </div>
+                
+                <div class="col-md-2">
+                    <input name="attributes[807][attributes_value_amount][]"
+                        type="text" class="percent_100" />
+                </div>
+                
+                <div class="action">
+                    <a href="javascript:void(0)" _id="807"
+                        class="del_attributes"><i class="mt5 f15 fa fa-trash"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<div id="attribute_content">
+            <div class="row mb10">
+            <div class="col-md-2">
+                <label class="field mb5">
+                    <ul class="tab-attr">
+                                                    <li><a title="Size" 
+                                   rel="tab-attributes806" href="javascript:void(0)" 
+                                   class="tab-attributes selected">Size</a></li>
+                                                        <li><a title="Màu sắc" 
+                                   rel="tab-attributes807" href="javascript:void(0)" 
+                                   class="tab-attributes ">Màu sắc</a></li>
+                                                </ul>
+                </label>
+            </div>
+
+            <div class="col-md-8">
+                    <div class="usual-content">
+                                            <div id="tab-attributes806"  style="display: block;"> 
+                            <div class="clear"></div>
+                            <div class="attributes" id="attributes806">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        Giá trị(<span class="text-danger">*</span>)
+                                    </div>
+                                    <div class="col-md-2">
+                                        Số lượng(<span class="text-danger">*</span>)
+                                    </div>
+                                    <div class="col-md-4">
+                                        Số tiền thay đổi/SP</div>
+                                    <div class="clear"></div>
+
+                                    
+                                    <div class="col-md-12">
+                                        <a href="javascript:void(0)" class="plus" id="add_attributes_806"
+                                           _id="806" _part="0" _max="6">
+                                            Thêm giá trị <i class="fa fa-plus-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="clear"></div>
+                                                <div id="tab-attributes807"  style="display: none;"> 
+                            <div class="clear"></div>
+                            <div class="attributes" id="attributes807">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        Giá trị(<span class="text-danger">*</span>)
+                                    </div>
+                                    <div class="col-md-2">
+                                        Số lượng(<span class="text-danger">*</span>)
+                                    </div>
+                                    <div class="col-md-4">
+                                        Số tiền thay đổi/SP</div>
+                                    <div class="clear"></div>
+
+                                    
+                                    <div class="col-md-12">
+                                        <a href="javascript:void(0)" class="plus" id="add_attributes_807"
+                                           _id="807" _part="0" _max="4">
+                                            Thêm giá trị <i class="fa fa-plus-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="clear"></div>
+                                        </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    	
+</div>
+
+<!-- Product option -->
+<div class="row mb10">
+    <div class="col-md-2">
+            <label class="field mb5">Thông số kỹ thuật</label>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">Tên</div>
+            <div class="col-md-4">Giá trị</div>
+            <div class="clear"></div>
+
+            <div id="content_add_option_product">  
+                            </div>
+
+            <div class="col-md-12 mt5">
+                <a href="javascript:void(0)" id="add_option_product" 
+                   _part="1">
+                        <i class="fa fa-plus-square"></i>
+                        Thêm giá trị                </a>
+                <div class="clear"></div>
+                <div name="option_product_error" class="text-danger"></div>
+            </div>
+        </div>
+        </div>
+    <div class="clear"></div>	
+</div>
+<div class="clear"></div>
+
+<!-- Option_product temp -->
+<div id="option_product_temp" class="hide">
+    <div class="row mt5" id="option_product_{option_product}">
+        <div class="col-md-6">{option_product} <input {param_name}="option_name[]" 
+                value="" type="text" class="percent_95" /></div>
+        <div class="col-md-4"><input {param_name}="option_value[]" value="" type="text" 
+                class="percent_100" /></div>
+        <div class="action">
+            <a href="javascript:void(0)" onclick="del_option_product({option_product})" 
+               title="Xóa thuộc tính">
+                <i class="f15 mt5 fa fa-trash"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div>                        </div>
+                        <div id="tab_seo_onpage" class="tab_content pd0" >
+                            <div class="row mb10">
+        <div class="col-md-2">
+            <label class="field mb5" for="param_site_title">Thẻ tiêu đề:</label>
+        </div>
+        <div class="col-md-6">
+            <span class="oneTwo"><input name="site_title" id="param_site_title" _autocheck="true" class="form-control" value="" type="text" /></span>
+            <span name="site_title_autocheck" class="autocheck append-icon right"></span>
+            <div name="site_title_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+        <div class="col-md-2">
+                <label class="field mb5" for="param_meta_desc">Thẻ mô tả:</label>
+        </div>
+        <div class="col-md-6">
+                <label class="field prepend-icon" for="param_meta_desc">
+                   <textarea name="meta_desc" id="param_meta_desc" _autocheck="true" class="gui-textarea"></textarea>
+                   <label class="field-icon" for="param_meta_desc"><i class="fa fa-file-text"></i></label>
+                </label>
+                <span name="meta_desc_autocheck" class="autocheck append-icon right"></span>
+                <div name="meta_desc_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="row mb10">
+        <div class="col-md-2">
+                <label class="field mb5" for="param_meta_key">Từ khóa:</label>
+        </div>
+        <div class="col-md-6">
+                <label class="field prepend-icon" for="param_meta_key">
+                    <textarea name="meta_key" id="param_meta_key" _autocheck="true" class="gui-textarea"></textarea>
+                    <label class="field-icon" for="param_meta_key"><i class="fa fa-file-text"></i></label>
+                </label>
+                <span name="meta_key_autocheck" class="autocheck append-icon right"></span>
+                <div name="meta_key_error" class="text-danger"></div>
+        </div>
+        <div class="clear"></div>
+</div>                        </div>
+                    </div>
+                    <!-- End tab_container-->
+                    
+                    <div class="box-Submit text-right">
+                        <input type="submit" value="Lưu lại" class="btn btn-success" />
+                    </div>
+                    <div class="clear"></div>
+                </fieldset>
+                </form>
+            </div>
+         </div>
+    </div>
+</section>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal_click_content"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: Content-Wrapper -->
+        </div>
+        <!-- End: Main -->
+        
+        <script type="text/javascript" src="http://demothu.web5s.com.vn/public/admin/ipanel/assets/js/main.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                "use strict";
+                // Init Theme Core      
+                Core.init({
+                    sbm: "sb-l-c",
+                });
+
+                //FooTable
+                $(function () {
+                    $('.footable').footable();
+                });
+
+            });
+        </script>
+    </body>
+</html>
+
+
